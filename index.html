@@ -1,1 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>A Missão Estelar</title>
+</head>
+
+<body>
+    <header>
+        <h1>A Missão Estelar</h1>
+        <p>Escolha bem… seu destino muda o universo.</p>
+    </header>
+
+    <main id="jogo">
+        <div class="scene active" id="scene-0">
+            <img src="img/espaconave.png" alt="">
+            <p>Você é o comandante da nave *Aurora IV*, enviada para encontrar o lendário **Núcleo Cósmico**, uma fonte infinita de energia capaz de salvar a humanidade.</p>
+            <button data-next="1">Entrar na nave</button>
+            <button data-next="2">Desistir da missão</button>
+        </div>
+
+        <div class="scene" id="scene-1">
+            <p>Dentro da nave, seu copiloto androide, LUX-7, informa que duas rotas estão disponíveis.</p>
+            <button data-next="3">Rota Nebular (rápida, perigosa)</button>
+            <button data-next="4">Rota Orbital (segura, lenta)</button>
+        </div>
+
+        <div class="scene" id="scene-2">
+            <img src="img/desistiu.png" alt="">
+            <p>Você decide não embarcar. A missão continua… sem você. O destino da humanidade permanece incerto.</p>
+        </div>
+
+        <div class="scene" id="scene-3">
+            <p>A Rota Nebular é instável! Uma criatura energética aparece bloqueando o caminho.</p>
+            <button data-next="5">Tentar se comunicar</button>
+            <button data-next="6">Atacar com lasers</button>
+        </div>
+
+        <div class="scene" id="scene-4">
+            <p>A rota segura leva você para perto de uma lua abandonada. Ali, sensores detectam um sinal misterioso.</p>
+            <button data-next="7">Aterrisar na lua</button>
+            <button data-next="8">Ignorar e continuar o voo</button>
+        </div>
+
+        <div class="scene" id="scene-5">
+            <p>A criatura entende seu pedido de paz e indica o caminho correto para o Núcleo Cósmico!</p>
+            <button data-next="9">Seguir a indicação da criatura</button>
+        </div>
+
+        <div class="scene" id="scene-6">
+            <p>O ataque irrita a criatura, e ela destrói parte da nave… a missão termina ali.</p>
+        </div>
+
+        <div class="scene" id="scene-7">
+            <p>Na lua abandonada, você encontra um artefato antigo que revela um mapa para o Núcleo Cósmico.</p>
+            <button data-next="9">Seguir com o novo mapa</button>
+        </div>
+
+        <div class="scene" id="scene-8">
+            <p>Você segue ignorando o sinal, mas acaba entrando em um campo gravitacional instável… e fica preso nele para sempre.</p>
+        </div>
+
+        <div class="scene" id="scene-9">
+            <p>Você finalmente chega ao Núcleo Cósmico: uma esfera brilhante flutuando no vazio.</p>
+            <button data-next="10">Coletar a energia</button>
+            <button data-next="11">Preservar o Núcleo e apenas estudá-lo</button>
+        </div>
+
+        <div class="scene" id="scene-10">
+            <img src="img/poder.png" alt="">
+            <p>A energia coletada transforma a humanidade em uma civilização avançada por milênios.</p>
+        </div>
+
+        <div class="scene" id="scene-11">
+            <img src="img/equilibrio.png" alt="">
+            <p>Ao preservar o Núcleo, você descobre sua real função: manter o equilíbrio do universo.  
+            Sua escolha salva todas as galáxias.</p>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
 
